@@ -2,34 +2,80 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title> hw01 </title>
+    <title> hw06 </title>
     <style>
-        h2{
-            background-color: lightblue; width:50%; font-family: fantasy; text-align:center; font-size:25px;
+           *{
+            padding:0;
+            margin:0;
+            background-color: #ddeed7;
         }
-        p{
-            color:lightslategray; font-family: monospace;
+        li{
+            list-style-type:none;
         }
-        *{
-            font-size:15px; font-family:initial;
+        #head{
+            background-color: #f6f5ef;
+        }
+        #logo{
+            float:left;
+            margin:20px 0 0 20px;
+            border: solid 1px #16330f;
+        }
+        #top{
+            float:right;
+            margin:60px 70px 0 0;
+            border:solid 1px;
+        }
+        #menu{
+            clear:both;
+            height:40px;
+            background-color:  #6a8518;
+            color: yellow;
+            text-align:center;
+            padding-top:15px;
+            font-size:20px;
+            border:solid 1px white;
+        }
+        #menu li{
+            display: inline;
+        }
+        .item{
+            margin: 0 30px 0 30px;
         }
         img{
-              width:300px;height:300px;
+            width:80px;
+            height:80px;
+            margin:0;
         }
+        video{max-width:80%; display:block; margin:20px auto;}
+        h3{text-align: center; }
+        
     </style>
 </head>
 
 <body>
-    <img src="./img/me.jpg"  alt="그림">
+    <div id="head">
+        <div id="logo">
+            <img src="hw/hw06/img/excercise.png"> 다함께 Diet
+        </div>
+        <div id="top">
+            <a href="./hw/hw06/login.html">로그인</a> | <a href="./hw/hw06/go.html">회원가입</a> | <a href="./hw/hw06/mypage.html">마이페이지</a> | <a href="./hw/hw06/sale.html">주문조회</a>
+        </div>
     </div>
-    <h2>Welcome to my webpage</h2>
-    University: Dongduk Women University<br>
-    1st major: <a href="https://www.dongduk.ac.kr/kor/edu/chinast_1.do" target="blank">Chinese and China culture</a><br>
-    double major:<a href="https://www.dongduk.ac.kr/kor/edu/computersc_01.do" target="blank"> Coumputer</a><br>
-    blood type: B<br>
-    MBTI: ENTJ<br>
-         <p> </p>
-    <p>I will introduce myself more. Please <a href ="./hw/hw02/hw02.html">click</a> here.</p>
+    <ul id="menu">
+        <li class="item">
+            <a href="./hw/hw06/cite.html">사이트소개</a></li>
+        <li>|</li>
+        <li class="item"><a href="./hw/hw06/dietway.html">다이어트 방법</a></li>
+        <li>|</li>
+        <li class="item"><a href="./hw/hw06/purchase.html">제품 구매</a></li>
+        <li>|</li>
+        <li class="item"><a href="./hw/hw06/customer.html">고객 센터</a></li>
+        <li>|</li>
+        <li class="item"><a href="./hw/hw06/after.html">날씬 후기</a></li>
+    </ul>
+    <h3>다이어트 댄스</h3>
+    <video  src="./hw/hw06/video/dance.mp4" controls loop autoplay >
+    </video>
 </body>
 
 </html>
